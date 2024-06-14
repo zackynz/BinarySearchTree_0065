@@ -97,4 +97,16 @@ public:
 			preorder(ptr->rightchild);
 		}
 	}
-	
+	void postorder(Node* ptr)
+	{
+		//perfoms the postorder traversal of the tree
+		if (ROOT == nullptr)
+		{
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+			cout << ptr->info << " ";
+		}
+	}
+};
+
+
